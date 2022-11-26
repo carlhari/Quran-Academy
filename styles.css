@@ -1,0 +1,499 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+body {
+  background-color: #f8f8ff;
+}
+
+select {
+  position: relative;
+}
+
+/*================== INITIAL PAGES ================= */
+.createUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.createUser div {
+  background-color: #ffa800;
+  padding: 14px 16px;
+  border-radius: 1em;
+}
+
+.createObjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.init {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+/*================== HEADER STYLE ================== */
+.header {
+  display: flex;
+  background-color: #dfab52;
+}
+
+.header-school {
+  display: flex;
+  flex-basis: 65%;
+  justify-content: flex-end;
+}
+
+.header-title {
+  font-family: "Libre Baskerville", serif;
+  color: #020101;
+  font-size: 2.5em;
+  margin-top: 1.2em;
+  margin-right: 1em;
+}
+
+.header-logo {
+  margin-left: auto;
+  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  height: 100px;
+  width: 75px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  flex-basis: 15%;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.header-menu span,
+.header-menu a {
+  margin-bottom: 10px;
+}
+
+.header-menu a {
+  text-decoration: none;
+}
+
+/* =========== INDEX.PHP =================== */
+.loading-container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13em;
+}
+
+.redirecting {
+  color: #000;
+}
+
+/* ============== LOGIN.PHP ================== */
+
+.logo {
+  height: 150px;
+  width: 110px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  background-color: #020101;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+  padding: 55px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-title {
+  text-align: center;
+  color: #dfab52;
+  margin-bottom: 3em;
+}
+
+.unForm,
+.pwForm {
+  background-color: #f8f8ff;
+  color: #020101;
+  border: 0.2em #dfab52 solid;
+  margin: 1em;
+  width: 200px;
+  height: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.unForm:focus,
+.pwForm:focus {
+  width: 260px;
+}
+
+.submit-btn {
+  background-color: #dfab52;
+  transition: 0.4s;
+  width: 60px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  border-radius: 1em;
+  background-color: #ffa800;
+}
+
+/*========= ADMIN.PHP ==============*/
+
+.menu,
+.logout,
+.enroll {
+  color: #020101;
+  padding: 0.8em;
+  transition: 0.7s ease-out;
+  cursor: pointer;
+}
+
+.menu:hover,
+.logout:hover,
+.enroll:hover {
+  border-radius: 1em;
+  background-color: #020101;
+  color: #f8f8ff;
+}
+
+.username {
+  margin-left: 3em;
+}
+
+.buttons {
+  min-height: 70vh;
+  display: flex;
+}
+
+.button-set {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.button-set a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #dfab52;
+  color: #020101;
+  font-size: 20px;
+  padding: 1em 1em 1em;
+  transition: 1s;
+}
+
+.button-set a:hover {
+  background-color: #020101;
+  color: #fff;
+  border-radius: 1em;
+}
+
+.button-set a i {
+  margin-right: 1em;
+}
+
+.enroll-btn,
+.update-btn,
+.view-btn {
+  height: 80px;
+  width: 80px;
+}
+
+/*================= ENROLL.PHP ================ */
+/*================ enrollValidation.php ================ */
+.border,
+.border-1,
+.borderProcess,
+.borderProcess-1,
+.borderUpdate,
+.borderUpdate-1 {
+  margin: auto;
+  border: 0.1em #f8f8ff solid;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  width: 50em;
+}
+
+.borderProcess {
+  margin-top: 2em;
+  height: 16.5em;
+}
+
+.borderProcess-1 {
+  margin-top: 3em;
+  height: 62em;
+}
+
+.borderUpdate {
+  margin-top: 2em;
+  height: 19em;
+}
+
+.borderUpdate-1 {
+  margin-top: 3em;
+  height: 51em;
+}
+
+.border {
+  margin-top: 2em;
+  height: 21.5em;
+}
+
+.border-1 {
+  margin-top: 3em;
+  height: 54.5em;
+}
+
+.line {
+  color: #dfab52;
+  margin-left: 0.5em;
+}
+
+.form-set {
+  margin-left: 2em;
+}
+
+.form-set input[type="text"],
+.form-set input[type="password"] {
+  border: #ffa800 solid 2px;
+  width: 17em;
+  height: 1em;
+}
+
+.selectText,
+.submitForm,
+.confirmForm {
+  border: #ffa800 solid 2px;
+}
+
+.submitForm,
+.confirmForm {
+  margin-left: 49.5em;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+/*============== enrollForm.php ===========*/
+.successForm {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.updated,
+.deleted {
+  font-size: 2em;
+}
+
+/*============== updateForm.php ========== */
+.submitContainer {
+  float: right;
+}
+
+.submitContainer input[type="submit"] {
+  border: #ffa800 solid 2px;
+  transition: 0.8s ease-out;
+  background-color: #dfab52;
+  color: #020101;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin-right: 3em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.submitContainer input[type="submit"]:hover {
+  background-color: #020101;
+  color: #fff;
+}
+
+/* SEARCH BAR CSS */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+  min-height: 80vh;
+}
+
+.search-section h2 {
+  color: #ffa800;
+  text-align: center;
+}
+
+.search-section form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-section input[type="text"] {
+  height: 100px;
+  width: 300px;
+  font-size: 38px;
+  border: 2px solid #000;
+  transition: 0.8s ease-out;
+}
+
+.search-section input[type="text"]:focus {
+  outline: none;
+  border: #ffa800 solid 2px;
+  border-radius: 1em;
+}
+
+.search-section input[type="submit"] {
+  float: right;
+  border: none;
+  padding: 18px 16px;
+  font-size: 18px;
+  color: #ffa800;
+  background-color: #020101;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-section input[type="submit"]:hover {
+  border-radius: 1em;
+  background-color: #ffa800;
+  color: black;
+}
+
+.tempPic {
+  width: 200px;
+  height: 200px;
+}
+
+/* Process Pages */
+
+.page-content {
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========= VIEW PAGES STYLES ======== */
+
+.viewBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.viewBox .side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.viewBox .viewSection {
+  margin-top: 2%;
+  background-color: #dfab52;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1%;
+  width: 70%;
+  padding: 16px 14px;
+  border-radius: 2em;
+  margin-bottom: 1%;
+}
+
+.viewSection hr {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.information {
+  background-color: #020101;
+  color: #fff;
+  margin-top: 100px;
+  display: flex;
+  width: 75%;
+  border-radius: 2em;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.info-box {
+  text-align: center;
+  border-bottom: 2px solid #dfab52;
+}
+
+.info-box:last-child {
+  border: none;
+}
+
+.viewHead {
+  color: #000;
+}
+
+.profilePic {
+  margin-top: 5em;
+  border-radius: 50%;
+  border: 5px solid #020101;
+  height: 275px;
+  width: 275px;
+}
+
+.processText {
+  color: #ffa800;
+}
+
+/* ========= FOOTER STYLES ========== */
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #ffa800;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: small;
+}
+
+
+
+/* viewAdmin Added */
+
+
+
